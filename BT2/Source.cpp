@@ -114,18 +114,18 @@ void XuatMang(int a[], int n)
 		cout << a[i] << "\t";
 	}
 }
-void NhapMangRanDum(int a[], int &n) // Nhanh gọn hơn
-{
-	cout << "Nhap so luong phan tu: ";
-	cin >> n;
-	srand (time(NULL)); // srand
-	for (int i = 0; i < n; i++)
-	{
-		//cout << "Nhap mang [" << i << "] = ";
-		a[i] = rand() % 1000 + 0; // rand 
-		//cin >> a[i];
-	}
-}
+//void NhapMangRanDum(int a[], int &n) // Nhanh gọn hơn
+//{
+//	cout << "Nhap so luong phan tu: ";
+//	cin >> n;
+//	srand (time(NULL)); // srand
+//	for (int i = 0; i < n; i++)
+//	{
+//		//cout << "Nhap mang [" << i << "] = ";
+//		a[i] = rand() % 1000 + 0; // rand 
+//		//cin >> a[i];
+//	}
+//}
 //a.Mảng có phải là mảng toàn chẵn
 bool KiemTraMangToanChan(int a[], int &n)// hàm bool trả về true/false
 {
