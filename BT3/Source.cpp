@@ -9,29 +9,46 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-#define MAX_LENGTH 100
+//void NhapPhanSo(sPhanSo &sP );
+//void XuatPhanSo(sPhanSo sP);
 struct sPhanSo //Kieu du lieu cau truc
 {
 	int nTuSo;
 	int nMauSo;
 };
-
+//Nhap 2 phan so
+void NhapPhanSo(sPhanSo &pS)
+{
+	cout << "Nhap tu so: ";
+	cin >> pS.nTuSo;
+	do
+	{
+		cout << "Nhap mau so: ";
+		cin >> pS.nMauSo;
+		if (pS.nMauSo == 0)
+		{
+			cout << "Nhap sai: ";
+		}
+	} while (pS.nMauSo == 0);
+}
+void XuatPhanSo(sPhanSo pS)
+{
+	cout << pS.nTuSo << "/" << pS.nMauSo << endl;
+}
 int main()
 {
 	//khai bao
-	sPhanSo pS;
-
-	cout << "Nhap tu so: " << endl;
-	cin >> pS.nTuSo;
-	cout << "Nhap mau so: " << endl;
-	cin >> pS.nMauSo;
+	sPhanSo sP1, sP2;
+	cout << "Nhap phan so 1: " << endl;
+	NhapPhanSo(sP1);
+	cout << "Nhap phan so 2: " << endl;
+	NhapPhanSo(sP2);
+	cout << "Xuat Phan so 1 : " << endl;
+	XuatPhanSo(sP1);
+	cout << "Xuat phan so 2 : " << endl;
+	XuatPhanSo(sP2);
 
 	system("pause");
 	return 0;
 }
-void NhapPhanSo(sPhanSo pS)
-{
-	cout << " Tu so: ";
-	cin >> 
 
-}
