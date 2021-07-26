@@ -15,7 +15,7 @@ void NhapMang(int a[], int &n); //Khai báo hàm
 //void NhapMangRanDum(int a[], int &n);
 void XuatMang(int a[], int n);
 bool KiemTraMangToanChan(int a[], int &n);
-bool KiemTraSNT(int a[], int n);
+//bool KiemTraSNT(int a[], int n);
 int main()
 {
 	int	a[MAX_A];
