@@ -5,8 +5,8 @@
 //a.Mảng có phải là mảng toàn chẵn
 //b.Mảng có phải là mảng toàn số nguyên tố
 //c.Mảng có phải là mảng tăng dần
-#include<iostream>
-#include<ctime>
+#include <iostream>
+#include <ctime>
 using namespace std;
 #define MAX_A 100 //Khai báo biến hằng có giá trị la 100
 #define MAX_B 100
@@ -19,7 +19,7 @@ bool KiemTraSNT(int a[], int &n);
 bool KiemTraTangDan(int a[], int &n);
 int main()
 {
-	int	a[MAX_A];
+	int a[MAX_A];
 	int nA;
 	int b[MAX_B];
 	int nB;
@@ -31,28 +31,28 @@ int main()
 		cout << "Mang toan so chan: " << endl;
 	}
 	else
-	{ 
+	{
 		cout << "Mang toan so khong phai la chan: " << endl;
 	}
 	//
-		if (KiemTraSNT(a, nA) == true)
-		{
-			cout << "Mang co toan SNT: " << endl;
-		}
-		else
-		{
-			cout << "Mang khong phai la SNT: " << endl;
-		}
+	if (KiemTraSNT(a, nA) == true)
+	{
+		cout << "Mang co toan SNT: " << endl;
+	}
+	else
+	{
+		cout << "Mang khong phai la SNT: " << endl;
+	}
 	//
-		if (KiemTraTangDan(a, nA) == true)
-		{
-			cout << "Mang tang dan: " << endl;
-		}
-		else
-		{
-			cout << "Mang khong tang dan: " << endl;
-		}
-		//
+	if (KiemTraTangDan(a, nA) == true)
+	{
+		cout << "Mang tang dan: " << endl;
+	}
+	else
+	{
+		cout << "Mang khong tang dan: " << endl;
+	}
+	//
 	cout << "Nhap mang B: " << endl;
 	NhapMang(b, nB);
 	//NhapMangRanDum(b, nB);
@@ -65,25 +65,25 @@ int main()
 	{
 		cout << "Mang khong phai la so chan: " << endl;
 	}
-		if (KiemTraSNT(b, nB) == true)
-		{
-			cout << "Mang co toan SNT: " << endl;
-		}
-		else
-		{
-			cout << "Khong phai la SNT: " << endl;
-		}
-	
+	if (KiemTraSNT(b, nB) == true)
+	{
+		cout << "Mang co toan SNT: " << endl;
+	}
+	else
+	{
+		cout << "Khong phai la SNT: " << endl;
+	}
+
 	//
-		if (KiemTraTangDan(b, nB) == true)
-		{
-			cout << "Mang tang dan: " << endl;
-		}
-		else
-		{
-			cout << "Mang khong tang dan: " << endl;
-		}
-		//
+	if (KiemTraTangDan(b, nB) == true)
+	{
+		cout << "Mang tang dan: " << endl;
+	}
+	else
+	{
+		cout << "Mang khong tang dan: " << endl;
+	}
+	//
 	cout << "Xuat mang A: " << endl;
 	XuatMang(a, nA);
 	cout << "Xuat mang B: " << endl;
@@ -122,12 +122,12 @@ void XuatMang(int a[], int n)
 //	for (int i = 0; i < n; i++)
 //	{
 //		//cout << "Nhap mang [" << i << "] = ";
-//		a[i] = rand() % 1000 + 0; // rand 
+//		a[i] = rand() % 1000 + 0; // rand
 //		//cin >> a[i];
 //	}
 //}
 //a.Mảng có phải là mảng toàn chẵn
-bool KiemTraMangToanChan(int a[], int &n)// hàm bool trả về true/false
+bool KiemTraMangToanChan(int a[], int &n) // hàm bool trả về true/false
 {
 	//srand(time(NULL)); // srand
 	bool KT = true;
@@ -142,7 +142,7 @@ bool KiemTraMangToanChan(int a[], int &n)// hàm bool trả về true/false
 	return KT;
 }
 //b.Mảng có phải là mảng toàn số nguyên tố
-bool KiemTraSNT(int a[], int &n)// hàm bool trả về true/false
+bool KiemTraSNT(int a[], int &n) // hàm bool trả về true/false
 {
 	/*	if (*a < 2)
 	{
@@ -182,3 +182,4 @@ bool KiemTraTangDan(int a[], int &n)
 			return false;
 	}
 }
+//Them 1 dong nay nha
