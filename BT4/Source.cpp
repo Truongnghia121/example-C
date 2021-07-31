@@ -6,6 +6,9 @@
 // Quy đồng hai phân số
 // Kiểm tra phân số âm hay dương
 // So sánh hai phân số
+/**
+Hello world.
+*/
 #include<iostream>
 #include<conio.h>
 using namespace std;
